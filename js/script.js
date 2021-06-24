@@ -1,5 +1,4 @@
 
-          //Avviare Vue:
 const app = new Vue (
     {
         //Dichciare in quale contenitore inserirlo
@@ -9,6 +8,12 @@ const app = new Vue (
         data:{
             text:'',
             contentClass: 'larghezza',
+            testoButton:'Click to show',
+            testoScomparsa:'hidden',
+        },
+        //Lancio di una funzione in click:
+        methods: function() {
+
         }
     }
 );
