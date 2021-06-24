@@ -12,8 +12,9 @@
     
     <div id="app">
         <input :class="contentClass" v-model="text" placeholder="Inserisci quello che vuoi scrivere">
-        <button>{{ testoButton }}</button>
-        <div :class="testoScomparsa">{{text}}</div>
+        <button @click ='checkShow'>{{ testoButton }}</button>
+        
+        <h1 :class="testoScomparsa">{{text}}</h1>
     </div>
 
 
