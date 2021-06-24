@@ -39,16 +39,24 @@ const secondaApp = new Vue (
         el:'#seconda-App',
         data:{
             buttonText:'Check',
-            premierLeage:10,
-            coppeInghilterra:4,
-            shiel:3,
-            champions:6
+            premierLeage:'',
+            coppeInghilterra:'',
+            shiel:'',
+            champions:''
         
         },
         methods:{
-            checkScorse: function() {
-                
+            checkScore: function() {
+                let calc = 0; 
+             
+                if (this.premierLeage != 10 || this.coppeInghilterra != 4) {
+                    alert('no');
+                } else if (this.shiel != 3 || this.champions != 6) {
+                    alert('no');
+                }else{
+                    alert('si');
+                }
             }
         }
     }
-)
+);
