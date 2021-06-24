@@ -6,23 +6,23 @@ const app = new Vue (
         //-----------
         //Inserimento dei dati quindi le nostre variabili utilizzabii
         data:{
-            text:'',
+            text:'Liverpool',
             contentClass: 'larghezza',
-            testoButton:'Click to show',
-            testoScomparsa:'hidden',
+            testoButton:'Click to hide',
+            testoScomparsa:'show',
             immagine:'img/pic.png',
             box: 'box-image'
         },
         //Lancio di una funzione in click:
         methods:{
             checkShow : function (){
-                if (this.testoScomparsa === 'hidden') {
-                    this.testoButton = 'Click to hide',
-                    this.testoScomparsa =  'show';
+                if (this.testoScomparsa === 'show') {
+                    this.testoScomparsa =  'hidden';
+                    this.testoButton = 'Click to show';
                     
                 } else {
-                    this.testoButton = 'Click to show';
-                    this.testoScomparsa = 'hidden';
+                    this.testoScomparsa = 'show';
+                    this.testoButton = 'Click to hide';
 
                 }
 
@@ -32,3 +32,23 @@ const app = new Vue (
 
     }
 );
+// ------------------------
+//Logica seconda parte domande:
+const secondaApp = new Vue (
+    {
+        el:'#seconda-App',
+        data:{
+            buttonText:'Check',
+            premierLeage:10,
+            coppeInghilterra:4,
+            shiel:3,
+            champions:6
+        
+        },
+        methods:{
+            checkScorse: function() {
+                
+            }
+        }
+    }
+)
