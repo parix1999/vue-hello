@@ -18,3 +18,28 @@
 
 /* --------------------------------------- */
 /* Classi normali css */
+*{
+    font-family: Helvetica;
+}
+.container{
+    width:1000px;
+    margin:0 auto; 
+    text-align: center;
+}
+.domande {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.etichetta{
+    margin-top: 10px;
+}
+.domande .question {
+    width:50%;
+    margin-top: 30px;
+    border: none;
+    border-bottom:1px solid #ccc;
+}
+.controllo{
+    margin-top: 30px;
+}
