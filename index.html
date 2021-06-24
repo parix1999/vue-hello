@@ -16,12 +16,29 @@
             </div>
     
             <input :class="contentClass" v-model="text" placeholder="Inserisci quello che vuoi scrivere">
+            <br>
             <!-- To do: chiedere perchè non va al primo colpo ma dopo keyup -->
             <button @keyup.enter @click ='checkShow' >{{ testoButton }}</button>
             
             <h1 :class="testoScomparsa">{{text}}</h1>
-        </div>
 
+        </div> <!-- fine div1 Vuejs -->
+
+        <!-- Parte 2 mia -->
+        <div id="seconda-App">
+            <form class="domande">
+                <label class="etichetta">Quante premier leage ha vinto il liverpool?</label>
+                <input v-modul = 'premierLeage' class="question" type="text" placeholder="Inserisci la risposta">
+                <label class="etichetta">Quante coppe d'Inghilterra ha vinto?</label>
+                <input v-modul = 'coppeInghilterra' class="question" type="text" placeholder="Inserisci la risposta">
+                <label class="etichetta">Quanti shiel ha vinto ?</label>
+                <input v-modul = 'shiel' class="question" type="text" placeholder="Inserisci la risposta">
+                <label class="etichetta">Quante Champions Cup ha vinto ?</label>
+                <input v-modul = 'champions' class="question" type="text" placeholder="Inserisci la risposta">
+                <button class="controllo" @click = ''>{{buttonText}}</button>
+            </form>
+        </div>
+    
     </div>
 
 
