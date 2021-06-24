@@ -10,8 +10,13 @@
 </head>
 <body>
     
-    <div id="app">
+    <div id="app">  
+        <div>
+            <img :src='immagine'/>
+        </div>
+
         <input :class="contentClass" v-model="text" placeholder="Inserisci quello che vuoi scrivere">
+        <!-- To do: chiedere perchè non va al primo colpo ma dopo keyup -->
         <button @keyup.enter @click ='checkShow' >{{ testoButton }}</button>
         
         <h1 :class="testoScomparsa">{{text}}</h1>
