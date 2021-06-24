@@ -10,7 +10,8 @@ const app = new Vue (
             contentClass: 'larghezza',
             testoButton:'Click to show',
             testoScomparsa:'hidden',
-            immagine:'img/pic.png'
+            immagine:'img/pic.png',
+            box: 'box-image'
         },
         //Lancio di una funzione in click:
         methods:{
