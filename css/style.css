@@ -1,3 +1,4 @@
+/* Classi inserite con il js (VueJS) */
 .larghezza{
     width:200px;
     margin-bottom: 20px;
@@ -8,3 +9,12 @@
 .show{
     display: block;
 }
+.box-image img{
+    width:200px;
+}
+.box-image img{
+    margin-bottom: 20px;
+}
+
+/* --------------------------------------- */
+/* Classi normali css */
