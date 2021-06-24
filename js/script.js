@@ -12,8 +12,18 @@ const app = new Vue (
             testoScomparsa:'hidden',
         },
         //Lancio di una funzione in click:
-        methods: function() {
+        methods:{
+            checkShow : function (){
+                if (this.testoScomparsa === 'hidden') {
+                    this.testoButton = 'Click to hide',
+                    this.testoScomparsa =  'show';
+                    
+                } else {
+                    this.testoButton = 'Click to show';
+                    this.testoScomparsa = 'hidden';
 
+                }
+            }
         }
     }
 );
