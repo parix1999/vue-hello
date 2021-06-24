@@ -10,6 +10,7 @@ const app = new Vue (
             contentClass: 'larghezza',
             testoButton:'Click to show',
             testoScomparsa:'hidden',
+            immagine:'img/pic.png'
         },
         //Lancio di una funzione in click:
         methods:{
@@ -23,7 +24,10 @@ const app = new Vue (
                     this.testoScomparsa = 'hidden';
 
                 }
+
             }
+
         }
+
     }
 );
